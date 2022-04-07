@@ -42,7 +42,7 @@ for device in devices:
 	if len(devices) > 1:
 		myDir = outDir+"/"+str(device.mac_address).replace(":","")
 	for field in lastData:
-		if field == "dateutc" or field == "tz" or field == "date":
+		if field == "dateutc" or field == "tz" or field == "date" or field == "lastRain" or field == "yearlyrainin" or field == "monthlyrainin" or field == "weeklyrainin":
 			continue
 		value = lastData[field]
 		print(field+": "+str(value))
